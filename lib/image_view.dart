@@ -34,6 +34,7 @@ class _ImageViewState extends State<ImageView> {
   /// 初回表示時に画像読み込みを開始する。
   @override
   void initState() {
+    super.initState();
     if (component.fileName != null) {
       _loadImage();
     }

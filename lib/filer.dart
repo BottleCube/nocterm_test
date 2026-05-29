@@ -49,6 +49,7 @@ class _FilerState extends State<Filer> {
   /// 初期ディレクトリを設定して一覧取得を開始する。
   @override
   void initState() {
+    super.initState();
     _currentDir = '';
     _fetchCurrentDirectoryEntries();
   }
@@ -56,6 +57,7 @@ class _FilerState extends State<Filer> {
   @override
   void dispose() {
     _controller.dispose();
+    super.dispose();
   }
 
   /// ディレクトリを変更する
